@@ -1,0 +1,25 @@
+{
+  "publisher": "CN=ContextMenuBridge",
+  "publisherDisplayName": "Local",
+  "installDir": "%USERPROFILE%\\NewContextMenu",
+  "items": [
+    {
+      "id": "RevuCombine",
+      "title": "Combine Files In Revu",
+      "mode": "handler",
+      "handlerClsid": "{a52de6e9-9e32-433c-a2fe-2ed5a54e6990}",
+      "match": "Combine Files In Revu",
+      "icon": "C:\\Program Files\\Bluebeam Software\\Bluebeam Revu\\21\\Revu\\Revu.exe,0",
+      "itemTypes": [ "*" ]
+    },
+    {
+      "id": "RevuConvert",
+      "title": "Convert Files In Revu",
+      "mode": "handler",
+      "handlerClsid": "{a52de6e9-9e32-433c-a2fe-2ed5a54e6990}",
+      "match": "Convert Files In Revu",
+      "icon": "C:\\Program Files\\Bluebeam Software\\Bluebeam Revu\\21\\Revu\\Revu.exe,0",
+      "itemTypes": [ "*" ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "publisher": "CN=ContextMenuBridge",
+  "publisherDisplayName": "Local",
+  "installDir": "%USERPROFILE%\\NewContextMenu",
+  "items": [
+    {
+      "id": "OpenInVSCode",
+      "title": "Open in VS Code",
+      "mode": "command",
+      "program": "%LOCALAPPDATA%\\Programs\\Microsoft VS Code\\Code.exe",
+      "arguments": "%*",
+      "icon": "%LOCALAPPDATA%\\Programs\\Microsoft VS Code\\Code.exe,0",
+      "itemTypes": [ "*", "Directory", "Directory\\Background" ]
+    }
+  ]
+}

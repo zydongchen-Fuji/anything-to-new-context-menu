@@ -1,0 +1,4 @@
+LIBRARY ContextMenuBridge
+EXPORTS
+    DllCanUnloadNow PRIVATE
+    DllGetClassObject PRIVATE
