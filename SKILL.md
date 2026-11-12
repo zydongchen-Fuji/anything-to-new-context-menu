@@ -22,7 +22,7 @@ Everything is in `scripts/`:
 ## Workflow
 
 1. **Check the Windows build.** `Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion' | select DisplayVersion,CurrentBuild`.
-   Don't spend time on the `{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}` "classic menu" registry hack: it no longer works on newer builds (confirmed on 26300) and isn't what the user asked for anyway.
+   Don't spend time on the `{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}` "classic menu" registry hack: it no longer works on newer builds (reported broken from 26220 in [Microsoft Q&A #6052587](https://learn.microsoft.com/en-us/answers/questions/6052587/registry-to-restore-the-old-right-click-context-me), confirmed on 26300) and isn't what the user asked for anyway.
 
 2. **Find the item.** Make or pick a sample file of the right type, then run:
    `powershell -ExecutionPolicy Bypass -File scripts\probe.ps1 -Path <file> [-Filter <text>]`

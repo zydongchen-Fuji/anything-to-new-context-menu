@@ -7,6 +7,10 @@ the top level of the **Windows 11 context menu**, no more digging through *Show 
 - Plain commands (e.g. *Open in VS Code*): the new item launches a program with the selected paths.
 - Native C++ handler (~5 ms load), one signed sparse MSIX per item, pinned to the main menu (not the *App extensions* submenu).
 
+**Why:** on newer Windows 11 builds (26220+, 26H2 Insider) the well-known `{86ca1aa0-…}` registry tweak that restored the classic menu no longer works
+([Microsoft Q&A](https://learn.microsoft.com/en-us/answers/questions/6052587/registry-to-restore-the-old-right-click-context-me)),
+and legacy entries stay buried under *Show more options*. Instead of fighting the new menu, this puts the entries you actually use into it.
+
 ## Use as a skill
 
 Copy this folder to `~/.claude/skills/anything-to-new-context-menu/` (or your agent's skills directory) and ask, e.g.
